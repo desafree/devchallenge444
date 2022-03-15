@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Raleway:wght@700&display=swap');
+
+*,*::after,*::before{padding: 0; margin: 0; box-sizing: border-box;}
+
+html{font-size: 62.5%;}
+
+body{font-family: "Montserrat", sans-serif; font-weight: 500; font-size: 18px; line-height: 21px; color: #000000;}
+
+.container{max-width: 600px; margin: 32px auto;}
+
+h1{font-family: Raleway;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: -0.045em;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.navigation{ display: flex;  border-bottom: 1px solid #BDBDBD; display: flex; justify-content: space-around;}
+.navigation a:link, .navigation a:visited{font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: black;
+  text-decoration: none;
+  width: 89px;
+  text-align: center;
+  
+}
+
+.navigation a:link.active,.navigation a:visited.active{border-bottom: 4px solid #2F80ED; padding-bottom: 18px;}
+
+.add{display: flex; margin-bottom: 32px;}
+.add input{flex: 1; padding: 20px 12px; border: 1px solid #BDBDBD; border-radius: 12px; margin-top: 16px; margin-right: 25px;}
+.add button{padding: 20px 40px; background-color: #2F80ED; border-radius: 12px; color: white; margin-top: 16px; border: none;}
+
+.todo-container{ display: flex; gap: 7px; align-items: center; margin-bottom: 27px;}
+.todo-container input{ width: 24px; height: 24px;}
+.todo-container input:checked + p{text-decoration:line-through; color: #333333;}
+.todo-container p{}
+.todo-container .remove{}
+
+.completed{margin-top: 25px;}
+.completed .todo-container{display: flex; }
+.completed .todo-container p{margin-right: auto; }
+.completed .todo-container button{border: none; background-color: transparent; cursor: pointer; }
+.completed .todo-container:last-child{margin-bottom: 32px;}
+.completed .closeAll{padding: 12px 26px; border: none; border-radius: 4px; background-color: #EB5757; color: white; display: flex; align-items: center; justify-content: center; margin-left: auto; gap: 5px; font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  }
+.completed .closeAll svg{width: 17px; height: 19px; box-sizing: content-box;}
+
+
+@media only screen and (max-width: 600px) {
+  .completed,.container-box{padding: 0 30px;}
+  .add input{margin-right: 0px; padding: 20px 9.5px;}
+}

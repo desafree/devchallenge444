@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/devchallenge444/static/css/main.f9a10f23.css",
+    "main.js": "/devchallenge444/static/js/main.0a43132b.js",
+    "index.html": "/devchallenge444/index.html",
+    "main.f9a10f23.css.map": "/devchallenge444/static/css/main.f9a10f23.css.map",
+    "main.0a43132b.js.map": "/devchallenge444/static/js/main.0a43132b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f9a10f23.css",
+    "static/js/main.0a43132b.js"
+  ]
+}
